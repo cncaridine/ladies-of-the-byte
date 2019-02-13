@@ -5,6 +5,7 @@ const session = require('express-session');
 const bcrypt = require('bcrypt');
 const db = mongoose.connection;
 const NounProject = require('the-noun-project')
+
 require('dotenv').config()
 
 const port = process.env.PORT || 3000;
@@ -18,6 +19,18 @@ app.use(session({
 
 app.use(express.json());
 app.use(express.static("public"));
+
+// retrieve user info saved on the session object
+// app.get('/', (req, res) => {
+//   if (req.session.currentUser) {
+//     res.json(req.session.currentUser);
+//   } else {
+//     res.status(401).json({
+//       status: 401,
+//       message: 'not logged in'
+//     });
+//   }
+// });
 
 const userController = require('./controllers/users.js')
 app.use('/users', userController);
@@ -34,6 +47,8 @@ app.use('/todo', todoController);
 // dependency for api route
 const apiController = require('./controllers/iconapi.js');
 app.use('/iconapi', apiController)
+
+
 
 app.listen(port, () => {
   console.log('listening...');
