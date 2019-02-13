@@ -90,7 +90,7 @@ app.controller("PlanController", [
 
     this.createTodo = event => {
     // add todo item to plan todo array
-    
+
       $http({
         method: "POST",
         url: "/todo",
@@ -279,6 +279,4 @@ app.controller("PlanController", [
         // console.log(response);
       });
     };
-
-  }
 }]); // this closes PlanController
