@@ -1,6 +1,11 @@
 # ladies-of-the-byte: Planit
 WDIR Unit 3 Group Project
-https://dashboard.heroku.com/apps/planit-planit
+- https://dashboard.heroku.com/apps/planit-planit
+
+## Contributors
+-Anna Lornitzo
+-Caroline Russell
+-Cori Caridine
 
 
 ## Technology
@@ -11,6 +16,7 @@ Planit is an application for event and goal planning. A plan is created and then
 
 
 ## Further Development
+### Anna
 If we were to continue developing this I would like to include a calendar view where the user can see all tasks of all plans so make tracking of a variety of tasks easier.
 
 ### Cori 
