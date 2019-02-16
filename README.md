@@ -1,6 +1,6 @@
 # ladies-of-the-byte: Planit
 WDIR Unit 3 Group Project
-- https://dashboard.heroku.com/apps/planit-planit
+- https://planit-planit.herokuapp.com/
 
 ## Contributors
 -Anna Lornitzo
